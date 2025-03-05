@@ -141,15 +141,15 @@ button:hover {
     text-align: center;
 }
 .btn {
-    margin: 50px;
-    margin-top: 20px;
+    margin: 20px;
+    margin-top: 40px;
     text-decoration: none;
     border: 2px solid rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 55px;
     color: #1b1b2e;
     padding: 15px 40px; /* Adjusted padding to ensure button content is not cut off */
-    
+    width: 25%;
     transition: all 0.3s;
     display: inline-block; /* Ensure button is displayed correctly */
 }
@@ -311,7 +311,25 @@ button:hover {
 }
 
 /* Media queries for mobile */
-@media (max-width: 595px) {
+@media (max-width: 599px) {
+    .card {
+        padding: 10px;
+        margin: 5px;
+        height: 400px;
+    }
+    .btn {
+        padding: 10px 20px;
+        margin: 20px;
+        width: 50%;
+    }
+    .card p {
+        font-size: 1rem;
+        margin-top: 40px;
+    }
+    .card_img {
+        height: 500px;
+    }
+    
     .line {
         display: none;
     }
@@ -540,4 +558,45 @@ textarea {
     background-color: #000000;
     color: #fff;
     animation: none;
+}
+.plan h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 3rem;
+}
+.plan p {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+.plan p:hover {
+    color: #00ffd5;
+    cursor: pointer;
+}
+.pricing__plans h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 140px;
+    font-size: 4rem;
+    color: #fff;
+}
+footer {
+    background-color: #001c25;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+.footer__nav__link {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: 300ms;
+}
+.footer__nav__link:hover {
+    background-color: #002b3b;
+    border-radius: 10px;
 }
