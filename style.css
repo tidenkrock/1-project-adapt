@@ -180,7 +180,7 @@ button:hover {
 }
 .projects {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     padding: 10px;
     margin: 10%;
     z-index: 0;
@@ -243,13 +243,27 @@ button:hover {
 }
 /* Media queries for desktop */
 @media (min-width: 1024px) {
+    .contact .btn {
+        margin-left: 40%;
+        padding: 20px 50px;
+        border-radius: 30px;
+        background-color: #ffffff;
+        color: #000;
+        border: none;
+        cursor: pointer;
+        transition: 300ms;
+        margin-left: 40%;
+        margin-right: 40%;
+        width: 20%;
+        height: 100px;
+        font-size: large;
+    }
     .contact {
-        margin-top: 80px;
+        margin-top: 150px;
         margin-bottom: 50px;
         padding: 0%;
         margin: 10%;
         z-index: 0;
-        
         background-color: rgba(0, 0, 0, 0.2);
         border-radius: 10px;
         backdrop-filter: blur(10px);
@@ -453,4 +467,77 @@ textarea {
     caret-color: #ffffff;
     resize:none;
     color: #ffffff;
+}
+::selection {
+    background-color: #001c25;
+    color: #00ffd5;
+}
+::spelling-error {
+    color: #ff0000;
+    text-decoration: red underline wavy;
+}
+::grammar-error {
+    color: #ff0000;
+    text-decoration: red underline wavy;
+}
+.pricing {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 10px;
+    margin: 10%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 5%;
+}
+.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   text-align: center;
+   color: #fff;
+   border-radius: 20px;
+    height: 500px;
+    margin-top: 5px;
+    background-color: #001c25c7;
+    margin-bottom: 50px;
+}
+.pricing__plans {
+
+    align-items: center;
+    margin-top: 50px;
+    
+}
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+.plan li {
+    padding: 10px;
+    margin: 10px;
+    background-color: #002535;
+    border-radius: 10px;
+    transition: 200ms;
+}
+.plan li:hover {
+    background-color: #001c25;
+} 
+.plan .btn {
+    margin-top: 50px;
+    width: 50%;
+    padding: 20px 50px;
+    border-radius: 30px;
+    background-color: #301900;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+.plan .btn:hover {
+    background-color: #000000;
+    color: #fff;
+    animation: none;
 }
